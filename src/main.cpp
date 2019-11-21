@@ -30,6 +30,7 @@ void send_data(uint8_t data) {
 
 uint8_t get_data(uint8_t *data) {
   // put your code here, to receive a data byte using multi processor communication mode:
+  return 0;
 }
 
 void setup() {
