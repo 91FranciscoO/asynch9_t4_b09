@@ -17,7 +17,6 @@ uint8_t ADDR;
 
 void asynch9_init(long BAUD) {
   // put your code here, to setup asynchronous serial communication using 9 bits:
-  //cenas
 }
 
 void send_addr(uint8_t addr) {
@@ -30,11 +29,26 @@ void send_data(uint8_t data) {
 
 uint8_t get_data(uint8_t *data) {
   // put your code here, to receive a data byte using multi processor communication mode:
-  return 0;
 }
 
 void setup() {
   // put your setup code here, to run once:
+  //poderia ter sido utilizado um br de 115200, contudo é melhor utilizar mais baixo
+  Serial.begin(9600);
+
+  pinMode(BUT1_PIN,INPUT);
+  pinMode(BUT2_PIN,INPUT);
+
+  pinMode(LED_PIN,OUTPUT);
+
+  pinMode(ADDR2_PIN,INPUT_PULLUP);
+  pinMode(ADDR1_PIN,INPUT_PULLUP);
+  pinMode(ADDR2_PIN,INPUT_PULLUP);
+  pinMode(ADDR3_PIN,INPUT_PULLUP);
+
+  pinMode(WREN_PIN, )
+
+
 }
 
 void loop() {
